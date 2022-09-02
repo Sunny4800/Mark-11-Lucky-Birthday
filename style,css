@@ -1,1 +1,69 @@
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #090302;
+    background-color: linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
+    color: #fff;
+    font-family: 'DM Serif Text', serif;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+}
+h1{
+    text-align: center;
+    padding: 18px;
+    font-size: 36px;
+}
+label{
+    display: block;
+    padding: 20px;
+    margin: 5px;
+}
+input{
+    margin-bottom: 0.5rem;
+    width: 30%;
+    padding: 8px;
+    border-radius: 5px;
+}
+#checknumber{
+    display: block;
+    margin: auto;
+    width: 140px;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    font-size: 24px;
+    border: 1px solid #c471ed;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+#checknumber:hover{
+    background-color: orangered;
+}
+#output{
+    font-size: 26px;
+    margin: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+}
