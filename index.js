@@ -5,6 +5,7 @@ const outputbox = document.querySelector(".output");
 
 
 function checknumberislucky(){
+    console.log(luckyno)
     if(luckyno===0){
         outputbox.innerText = "Please Enter a Valid Number"; 
     }
