@@ -7,14 +7,13 @@ const outputbox = document.querySelector("#output");
 function checknumberislucky(){
     const dob = dateOfBirth.value;
     const sum = calculate(dob);
-    function check(sum,luckyno){
         if(sum%luckyno ===0){
         outputbox.innerText ="Your Birthday is Lucky 😊";
     }
     else{
         outputbox.innerText ="Your Birthday is not Lucky 😊";
     }
-}}
+}
 
 function calculate(dob){
     dob = dob.replaceAll("-","");
