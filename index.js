@@ -1,7 +1,7 @@
 const dateOfBirth = document.querySelector("#dateofbirth");
 const luckyno = document.querySelector("#luckynumber");
 const checkbutton = document.querySelector("#checknumber");
-const outputbox = document.querySelector("#output");
+const outputbox = document.querySelector(".output");
 
 
 function checknumberislucky(){
