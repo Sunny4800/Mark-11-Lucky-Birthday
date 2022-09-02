@@ -3,9 +3,9 @@ const luckyno = document.querySelector("#luckynumber");
 const checkbutton = document.querySelector("#checknumber");
 const outputbox = document.querySelector(".output");
 
-
+console.log(luckyno)
 function checknumberislucky(){
-    console.log(luckyno)
+    
     if(luckyno===0){
         outputbox.innerText = "Please Enter a Valid Number"; 
     }
