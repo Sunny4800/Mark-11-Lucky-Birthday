@@ -28,7 +28,8 @@ label{
 }
 input{
     margin-bottom: 0.5rem;
-    width: 30%;
+    width: 20%;
+    min-width: fit-content;
     padding: 8px;
     border-radius: 5px;
 }
