@@ -1,30 +1,28 @@
 const dateOfBirth = document.querySelector("#dateofbirth");
 const luckyno = document.querySelector("#luckynumber");
 const checkbutton = document.querySelector("#checknumber");
-const outputbox = document.querySelector(".output");
+const outputbox = document.querySelector("#output");
 
-console.log(luckyno)
+
+function checkbirthday(sum,luckyno){
+    if(luckyno <= 0)
+        outputbox.innerText = "Please Enter a valid number 😐 ";
+    else
+    if(sum%luckyno===0){
+        outputbox.innerText ="Your Birthday is Lucky 😊";
+    }
+    else{
+        outputbox.innerText ="Your Birthday is not Lucky 😥";
+    }   
+}
+
 function checknumberislucky(){
-    
-//     if(luckyno===0){
-//         outputbox.innerText = "Please Enter a Valid Number"; 
-//     }
-//     else
-//     {
-//     }
     const dob = dateOfBirth.value;
     const sum = calculate(dob);
-        if(sum&&dob)
-        if(sum%luckyno===0){
-            outputbox.innerText ="Your Birthday is Lucky 😊";
-        }
-        else{
-            outputbox.innerText ="Your Birthday is not Lucky 😥";
-        } 
+    if((sum =="")||(dob == ""))
+        outputbox.innerText = "Please Enter Both the Fields 😑";
     else
-        outputbox.innerText = "Please Enter a Valid Number"; 
-
-
+        checkbirthday(sum,luckyno.value)
 }
 
 function calculate(dob){
