@@ -6,20 +6,24 @@ const outputbox = document.querySelector(".output");
 console.log(luckyno)
 function checknumberislucky(){
     
-    if(luckyno===0){
-        outputbox.innerText = "Please Enter a Valid Number"; 
-    }
-    else
-    {
+//     if(luckyno===0){
+//         outputbox.innerText = "Please Enter a Valid Number"; 
+//     }
+//     else
+//     {
+//     }
     const dob = dateOfBirth.value;
     const sum = calculate(dob);
+        if(sum&&dob)
         if(sum%luckyno===0){
             outputbox.innerText ="Your Birthday is Lucky 😊";
         }
         else{
             outputbox.innerText ="Your Birthday is not Lucky 😥";
         } 
-    }
+    else
+        outputbox.innerText = "Please Enter a Valid Number"; 
+
 
 }
 
